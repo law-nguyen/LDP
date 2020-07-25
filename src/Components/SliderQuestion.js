@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles.css';
 
-function SliderQuestion(props) {
+function SliderQuestion(props) {  
+
   return (
     <div>
       <h1>{props.question}: {props.value}</h1>
@@ -11,7 +12,6 @@ function SliderQuestion(props) {
           type="range"
           min={props.min}
           max={props.max}
-          onChange={props.handleChange}
         />
       </div>
     </div>
