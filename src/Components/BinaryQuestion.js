@@ -4,11 +4,13 @@ import '../styles.css'
 function BinaryQuestion(props) {
   return(
     <div class="binary">
-      <h1>{props.question}</h1>
-      <input type="radio" name="answer" id="option1" value="2"/>
-      <label for="option1">{props.option1}</label>
-      <input type="radio" name="answer" id="option2" value="2"/>
-      <label for="option2">{props.option2}</label>
+      <h3>{props.question}</h3>
+      <input type="radio" name={props.id} value="1"/>
+      <label>{props.option2}</label>
+      <input type="radio" name={props.id} value="0"/>
+      <label>{props.option1}</label>
+      <input type="radio" name={props.id} value="6"/>
+      <label>Do Not Know</label>
     </div>
   );
 }
