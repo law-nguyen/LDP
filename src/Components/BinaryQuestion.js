@@ -2,6 +2,11 @@ import React from 'react';
 import '../styles.css'
 
 function BinaryQuestion(props) {
+
+  const questionAnswered = questionId => event =>{
+    
+  }
+
   return(
     <div class="binary">
       <h3>{props.question}</h3>
